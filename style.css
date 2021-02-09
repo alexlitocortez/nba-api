@@ -1,0 +1,71 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.image-arrow {
+    position: relative;
+    margin: auto;
+    top: 250px;
+    left: 20%;
+}
+
+.left-arrow {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 50px;
+    left: 25%;
+}
+
+#left-arrow-1 {
+    display: inline-block;
+    height: 50px;
+    width: 5px;
+    background-color: black;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+#left-arrow-2 {
+    display: inline-block;
+    height: 50px;
+    width: 5px;
+    background-color: black;
+    transform: rotate(-45deg);
+    position: relative;
+    top: 32px;
+    right: 9px;
+    cursor: pointer;
+}
+
+.right-arrow {
+    position: relative;
+    top: 35px;
+    left: 40%;
+}
+
+#right-arrow-1 {
+    display: inline-block;
+    height: 50px;
+    width: 5px;
+    background-color: black;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+#right-arrow-2 {
+    display: inline-block;
+    height: 50px;
+    width: 5px;
+    background-color: black;
+    transform: rotate(-45deg);
+    position: relative;
+    top: -35px;
+    right: 6px;
+    cursor: pointer;
+}
