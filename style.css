@@ -47,6 +47,8 @@ body {
     position: relative;
     top: 35px;
     left: 40%;
+    height: 50px;
+    width: 50px;
 }
 
 #right-arrow-1 {
