@@ -7,23 +7,41 @@
     <title>NBA API</title>
 </head>
 <body>
-    <div class="mySlides">
-        <img>
-        <div class="caption-text"></div>
-    </div>
-    <div id="image-arrow" class="image-arrow">
-        <div id="arrows" class="left-arrow">
-            <span class="left-arrows" id="left-arrow-1"></span>
-            <span class="left-arrows" id="left-arrow-2"></span>
-        </div>
-        <div id="arrows-2" class="right-arrow">
-            <span class="right-arrows" id="right-arrow-1"></span>
-            <span class="right-arrows" id="right-arrow-2"></span>
-        </div>
-    </div>
-    <div class="nba-image">
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
 
+        <div class="mySlides fade">
+            <!-- Put image placeholder -->
+            <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <!-- Put image placeholder -->
+            <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+            <!-- Put image placeholder -->
+            <div class="text">Caption Three</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)"></a>
+        <a class="next" onclick="plusSlides(1)"></a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div class="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
     </div>
 </body>
 <script src="api.js"></script>
 </html>
+
+
+
+
+
