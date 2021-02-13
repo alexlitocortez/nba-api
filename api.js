@@ -1,25 +1,22 @@
 
-const arrows = document.getElementById('arrows');
-const imageArrow = document.getElementById('image-arrow');
-const arrowsTwo = document.getElementById('arrows-2');
+const slides = document.getElementsByClassName("mySlides");
+const dots = document.getElementById('dot');
+const numbers = document.getElementById('numbertext');
+const button = document.getElementById('button');
 
+button.addEventListener('click', addOne);
 
-arrows.addEventListener('click', () => {
-    work();
-});
-
-arrows.addEventListener('click', () => {
-    works();
-})
-
-function work() {
-    arrows.style.transform = "scale(1.2)";
-    arrows.style.transition = "0.5s";
+function addOne() {
+    var foo = document.getElementById('thisone').innerHTML;
+    if (foo >= 5) {
+        return 1;
+    } else {
+    foo++;
+    document.getElementById('thisone').innerHTML = foo;
+    }
 }
 
-function works() {
-    arrowsTwo.style.transform = "scale(1.2)";
-    arrowsTwo.style.transition = "0.5s";
-}
 
-// Do clicked
+
+// How to get number to stop at 5 and reset
+// How to get button click to correspond with change of image
