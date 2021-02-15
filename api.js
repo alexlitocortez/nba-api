@@ -3,24 +3,20 @@ const slides = document.getElementsByClassName("mySlides");
 const dots = document.getElementById('dot');
 const numbers = document.getElementById('numbertext');
 const button = document.getElementById('button');
+const header = document.getElementById('thisone');
+
 
 button.addEventListener('click', addOne);
 
-function addOne(value1) {
-    var returnedObject = {};
-    returnedObject["1"] = value1;
-    var foo = document.getElementById('thisone').innerHTML;
-    if (foo >= 5) {
-        return value1;
-    } else {
-        foo++;
-        document.getElementById('thisone').innerHTML = foo;
+function addOne() {
+    var input = ["Kelly Oubre", "Andrew Wiggins", "Draymond Green", "James Wiseman"];
+    input.forEach(function(entry) {
+        console.log(entry);
     }
-}
+};
 
 
 
-// How to get number to stop at 5 and reset
+
+// Use array to store text and filter through them
 // How to get button click to correspond with change of image
-
-
