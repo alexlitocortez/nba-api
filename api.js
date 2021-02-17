@@ -5,18 +5,24 @@ const numbers = document.getElementById('numbertext');
 const button = document.getElementById('button');
 const header = document.getElementById('thisone');
 
+const input = ["Kelly Oubre", "Andrew Wiggins", "Draymond Green", "James Wiseman"];
+const arrayLength = input.length;
+
 
 button.addEventListener('click', addOne);
 
 function addOne() {
-    var input = ["Kelly Oubre", "Andrew Wiggins", "Draymond Green", "James Wiseman"];
-    input.forEach(function(entry) {
-        console.log(entry);
+    this.inner = nextOne();
+    for (var i = 0; i < arrayLength; i++) {
+        header.innerHTML = arrayLength[i];
+        console.log(input[i]);
     }
 };
 
-function endOne() {
-    
+function nextOne() {
+    input.forEach(entry) {
+        console.log(entry);
+    }
 }
 
 
