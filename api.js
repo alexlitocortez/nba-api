@@ -5,25 +5,31 @@ const numbers = document.getElementById('numbertext');
 const button = document.getElementById('button');
 const header = document.getElementById('thisone');
 
-const input = ["Kelly Oubre", "Andrew Wiggins", "Draymond Green", "James Wiseman"];
-const arrayLength = input.length;
+const input = ["Stephen Curry", "Kelly Oubre", "Andrew Wiggins", "Draymond Green", "James Wiseman"];
+const arrayLength = input.innerHTML;
+const end = input.length - 1;
+
+var text1 = new innerHTML();
+var textTag = document.text1;
 
 
 button.addEventListener('click', addOne);
 
 function addOne() {
-    this.inner = nextOne();
-    for (var i = 0; i < arrayLength; i++) {
-        header.innerHTML = arrayLength[i];
-        console.log(input[i]);
+    var counter = 0;
+    if (counter == end) {
+        counter = 0;
     }
+    else {
+        counter++;
+    }
+    header.innerHTML = input[counter];
 };
 
-function nextOne() {
-    input.forEach(entry) {
-        console.log(entry);
-    }
-}
+
+
+
+
 
 
 
