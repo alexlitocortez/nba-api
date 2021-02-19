@@ -7,13 +7,19 @@ const image = document.getElementById('getImage');
 const header = document.getElementById('thisone');
 
 var counter = 0;
-var counting = 0;
 
+var images = [
+    "curry.jpg",
+    "oubre.jpg",
+    "wiggins.jpeg",
+    "green.jpg",
+    "wiseman.jpg"
+];
 
-function dedicatedFunction() {
-    addOne()
-    imageOne()
-};
+button.addEventListener('click', () => {
+    addOne();
+    loadImages();
+})
 
 
 function addOne() {
@@ -24,18 +30,23 @@ function addOne() {
     counter++;
 };
 
-function imageOne() {
-    var warriors = ["curry.jpg", "oubre.jpg", "wiggins.jpeg", "green.jpeg", "wiseman.jpg"];
-    if(counter == warriors.length)
-    counting = 0;
-    image.src = warriors[counting];
-    counting++;
+function loadImages() {
+    for(var i = 0; i < images.length; i++) {
+        image.src = images[i];
+        i++;
+    }
 }
 
 
-
 // Button doesn't work on first click and doesn't match with the images // james wiseman picture doesn't show up first time
+// Install API
 // Make sure grey boxes correspond with change in image
 // Make colors and design nice
 // Center everything
 // Make responsive
+
+
+
+
+
+
