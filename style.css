@@ -3,18 +3,51 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 1em;
+    font-family: 'Raleway', sans-serif;
+}
+
 /* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
-    position: relative;
-    margin: auto;
+    position: absolute;
+    top: 400px;
     left: 50%;
 }
 
-/* Hide the images by default */
-.mySlides{
-    display: none;
+#getImage {
+    position: absolute;
+    top: 0px;
+    left: 30%;
+    transform: translateX(-50%, -50%);
 }
+
+/* Player name */
+#thisone {
+    position: relative;
+    right: 100px;
+}
+
+/* Button */
+.button {
+    padding: 10px;
+    width: 250px;
+    position: relative;
+    right: 120px;
+    color: white;
+    background-color: #1d428a;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+
 
 /* Next & previous buttons */
 .prev, .next {
@@ -57,8 +90,9 @@
 
 /* The dots/bullets/indicators */
 .text-align {
-    position: absolute;
-    left: 470px;
+    position: fixed;
+    left: 46%;
+    top: 600px;
 }
 
 .dot {
@@ -72,9 +106,18 @@
     transition: background-color 0.6s ease;
 }
 
+/* dot effects */
+.greyout {
+    background-color: grey;
+    padding: 10px;
+    animation-duration: .2s;
+}
+
 .active, .dot:hover {
     background-color: #717171;
 }
+
+
 
 /* Fading animation */
 .fade {
@@ -93,5 +136,3 @@
     from {opacity: .4}
     to {opacity: 1}
 }
-
-
