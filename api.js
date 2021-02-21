@@ -1,62 +1,63 @@
 
 const slides = document.getElementsByClassName("mySlides");
-const dots = document.getElementById('dot');
 const numbers = document.getElementById('numbertext');
+const textAlign = document.getElementById('text-align');
+const dots = document.getElementById('dot');
 const button = document.getElementById('button');
 const image = document.getElementById('getImage');
 const header = document.getElementById('thisone');
 
 var counter = 0;
-var images = [ 
-    {src: "curry.jpg"}, 
-    {src: "oubre.jpg"}, 
-    {src: "wiggins.jpeg"}, 
-    {src: "green.jpg"}, 
-    {src: "wiseman.jpg"} 
-];
-var loaded = 0;
 
+// variables for going back and forth between span siblings
+var prev = dots.previousElementSibling;
+var next = dots.nextElementSibling;
 
 button.addEventListener('click', () => {
     addOne();
-    loadImages();
-    nextStep();
+    dotsColor();
+    nextColor();
 })
 
 
 function addOne() {
     var input = ["Stephen Curry", "Kelly Oubre", "Andrew Wiggins", "Draymond Green", "James Wiseman"];
+    var images = ["/Users/l/Desktop/Frontendmentor.io/NBA API/curry.jpg", "/Users/l/Desktop/Frontendmentor.io/NBA API/oubre.jpg",
+    "/Users/l/Desktop/Frontendmentor.io/NBA API/wiggins.jpeg", "/Users/l/Desktop/Frontendmentor.io/NBA API/green.jpg",
+    "/Users/l/Desktop/Frontendmentor.io/NBA API/wiseman.jpg"];
     if(counter == input.length)
-    counter = 0; //reset index once end of array is reached
+    if(counter == images.length)
+    counter = 0;
     header.innerHTML = input[counter];
+    image.src = images[counter];
     counter++;
-};
+}
 
-function loadImages() {
-    for(var i = 0; i < images.length; i++) {
-        var tmp = new Image;
-        tmp.onload = function() {
-            loaded++;if(loaded == images.length){nextStep();}};
+function dotsColor() {
+    dots.classList.toggle('greyout');
+    for(var i = 0; i < dots.length; i++) {
+        if(dots[i] = textAlign) {
+            
         }
-        image.src = images[i]
-        i++;
     }
+}
 
-function nextStep() {
-    console.log("everything loaded");
+
+function nextColor() {
+    for(var i = 0; i < textAlign.length; i++) {
+        
+        }
+    }
 }
 
 
 
-
-
-// james wiseman picture doesn't show up first time
-    // - It's not the picture's fault
-// button doesn't work on first click and doesn't match with the images
-// Install API
 // Make sure grey boxes correspond with change in image
+// button doesn't work on first click
+// Install API
 // Make colors and design nice
 // Center everything
+    //Make sure player name is 
 // Make responsive
 
 
