@@ -31,11 +31,12 @@ function addOne() {
 
 function dotsColor() {
     var first = dots.firstElementChild;
+    var first = false;
     var second = document.getElementById('dot2');
     var third = document.getElementById('dot3');
     var fourth = document.getElementById('dot4');
     var last = dots.lastElementChild;
-    if(dots == first) {
+    if(first) {
         first.classList.toggle('greyout');
     } else if(dots == second) {
         second.classList.toggle('greyout');
