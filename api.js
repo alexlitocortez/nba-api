@@ -9,14 +9,10 @@ const header = document.getElementById('thisone');
 
 var counter = 0;
 
-// variables for going back and forth between span siblings
-var prev = dots.previousElementSibling;
-var next = dots.nextElementSibling;
 
 button.addEventListener('click', () => {
     addOne();
     dotsColor();
-    nextColor();
 })
 
 
@@ -34,21 +30,17 @@ function addOne() {
 }
 
 function dotsColor() {
-    dots.classList.toggle('greyout');
-    for(var i = 0; i < dots.length; i++) {
-        if(dots[i] = textAlign) {
-            
+    var collect = document.querySelectorAll('span');
+    var previous = collect[i - 1];
+    var next = collect[i + 1];
+    for(var i = 0; i < collect.length; i++) {
+        if(collect[i] == dots) {
+            previous.classList.toggle('greyout');
+        } else {
+            next.classList.toggle('greyout');
         }
-    }
-}
-
-
-function nextColor() {
-    for(var i = 0; i < textAlign.length; i++) {
-        
-        }
-    }
-}
+    };
+};
 
 
 
@@ -57,7 +49,7 @@ function nextColor() {
 // Install API
 // Make colors and design nice
 // Center everything
-    //Make sure player name is 
+    //Make sure player name is centered
 // Make responsive
 
 
