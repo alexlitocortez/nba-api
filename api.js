@@ -2,7 +2,7 @@
 const slides = document.getElementsByClassName("mySlides");
 const numbers = document.getElementById('numbertext');
 const textAlign = document.getElementById('text-align');
-const dots = document.getElementById('dot');
+const dots = document.querySelectorAll('span');
 const button = document.getElementById('button');
 const image = document.getElementById('getImage');
 const header = document.getElementById('thisone');
@@ -30,16 +30,22 @@ function addOne() {
 }
 
 function dotsColor() {
-    var collect = document.querySelectorAll('span');
-    var previous = collect[i - 1];
-    var next = collect[i + 1];
-    for(var i = 0; i < collect.length; i++) {
-        if(collect[i] == dots) {
-            previous.classList.toggle('greyout');
-        } else {
-            next.classList.toggle('greyout');
-        }
-    };
+    var first = dots.firstElementChild;
+    var second = document.getElementById('dot2');
+    var third = document.getElementById('dot3');
+    var fourth = document.getElementById('dot4');
+    var last = dots.lastElementChild;
+    if(dots == first) {
+        first.classList.toggle('greyout');
+    } else if(dots == second) {
+        second.classList.toggle('greyout');
+    } else if(dots == third) {
+        third.classList.toggle('greyout');
+    } else if(dots == fourth) {
+        fourth.classList.toggle('greyout');
+    } else {
+        last.classList.toggle('greyout');
+    }
 };
 
 
