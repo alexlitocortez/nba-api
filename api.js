@@ -2,7 +2,6 @@
 const slides = document.getElementsByClassName("mySlides");
 const numbers = document.getElementById('numbertext');
 const textAlign = document.getElementById('text-align');
-const dots = document.querySelectorAll('span');
 const button = document.getElementById('button');
 const image = document.getElementById('getImage');
 const header = document.getElementById('thisone');
@@ -30,24 +29,24 @@ function addOne() {
 }
 
 function dotsColor() {
-    var first = dots.firstElementChild;
-    var first = false;
-    var second = document.getElementById('dot2');
-    var third = document.getElementById('dot3');
-    var fourth = document.getElementById('dot4');
-    var last = dots.lastElementChild;
-    if(first) {
-        first.classList.toggle('greyout');
-    } else if(dots == second) {
-        second.classList.toggle('greyout');
-    } else if(dots == third) {
-        third.classList.toggle('greyout');
-    } else if(dots == fourth) {
-        fourth.classList.toggle('greyout');
-    } else {
-        last.classList.toggle('greyout');
+    const dots = document.getElementById('dot');
+    for(let i = 0; i < dots.length; i++) {
+        const item = dots[i];
+        item.classList.toggle('greyout');
+        item.classList.remove('greyout');
     }
 };
+
+
+if(first == true) {
+    second.classList.toggle('greyout');
+} else if(second == false) {
+    third.classList.toggle('greyout');
+} else {
+    first.classList.remove('greyout');
+    fourth.classList.toggle('greyout');
+
+
 
 
 
