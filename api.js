@@ -32,14 +32,30 @@ function addOne() {
 }
 
 function dotsColor() {
-    for(var i = 0; i < textAlign.length; i++) {
-        var current = document.getElementsByClassName("greyout");
-        current[0].className = current[0].className.replace("greyout");
-        this.className += "greyout"
+    var dotOne = document.getElementById('dotOne');
+    var dotTwo = document.getElementById('dotTwo');
+    var dotThree = document.getElementById('dotThree');
+    var dotFour = document.getElementById('dotFour');
+    var dotFive = document.getElementById('dotFive');
+    var docViewBottom = document.querySelectorAll('.dot');
+    if(textAlign == dotOne) {
+        dotOne.classList.toggle('greyout');
+    } else if(dotTwo = clicked) {
+        dotTwo.classList.toggle('greyout');
+    } else if {
+
+    } else if {
+
+    } else {
+
+    }
     }
 }
 
 
+if (elemBottom < docViewBottom) {
+    $elem.addClass('active');
+  }
 
 // 1. Click button and greyout class appears on span
 //  - try for loops
