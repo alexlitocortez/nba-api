@@ -43,7 +43,6 @@ function dotsColor() {
 
 
 
-
 // Make sure grey boxes correspond with change in image
 // button doesn't work on first click
 // Install API
