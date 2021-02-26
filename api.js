@@ -6,21 +6,29 @@ const textAlign = document.getElementById('text-align');
 const image = document.getElementById('getImage');
 const header = document.getElementById('thisone');
 
-const images = ["/Users/l/Desktop/Frontendmentor.io/NBA API/curry.jpg", "/Users/l/Desktop/Frontendmentor.io/NBA API/oubre.jpg",
-"/Users/l/Desktop/Frontendmentor.io/NBA API/wiggins.jpeg", "/Users/l/Desktop/Frontendmentor.io/NBA API/green.jpg",
+// Array of NBA player images
+const images = ["/Users/l/Desktop/Frontendmentor.io/NBA API/curry.jpg", "/Users/l/Desktop/Frontendmentor.io/NBA API/oubre.jpg", 
+"/Users/l/Desktop/Frontendmentor.io/NBA API/wiggins.jpeg", "/Users/l/Desktop/Frontendmentor.io/NBA API/green.jpg", 
 "/Users/l/Desktop/Frontendmentor.io/NBA API/wiseman.jpg"];
+
+// Array of individual NBA player images
+const curry = "/Users/l/Desktop/Frontendmentor.io/NBA API/curry.jpg";
+const oubre = "/Users/l/Desktop/Frontendmentor.io/NBA API/oubre.jpg";
+const wiggins = "/Users/l/Desktop/Frontendmentor.io/NBA API/wiggins.jpeg";
+const green = "/Users/l/Desktop/Frontendmentor.io/NBA API/green.jpg";
+const wiseman = "/Users/l/Desktop/Frontendmentor.io/NBA API/wiseman.jpg";
 
 const btns = document.querySelectorAll('.dot');
 
 var counter = 0;
 
-
+// Event listener which triggers functions when I click the button
 button.addEventListener('click', () => {
     addOne();
     dotsColor();
 })
 
-
+// Function which triggers different images and text when button clicked
 function addOne() {
     var input = ["Stephen Curry", "Kelly Oubre", "Andrew Wiggins", "Draymond Green", "James Wiseman"];
     if(counter == input.length)
@@ -37,25 +45,24 @@ function dotsColor() {
     var dotThree = document.getElementById('dotThree');
     var dotFour = document.getElementById('dotFour');
     var dotFive = document.getElementById('dotFive');
-    var docViewBottom = document.querySelectorAll('.dot');
-    if(textAlign == dotOne) {
+    if(header.innerHTML == "Stephen Curry") {
+        dotFive.classList.remove('greyout');
         dotOne.classList.toggle('greyout');
-    } else if(dotTwo = clicked) {
+    } else if(header.innerHTML == "Kelly Oubre") {
+        dotOne.classList.remove('greyout');
         dotTwo.classList.toggle('greyout');
-    } else if {
-
-    } else if {
-
+    } else if(header.innerHTML == "Andrew Wiggins") {
+        dotTwo.classList.remove('greyout');
+        dotThree.classList.toggle('greyout');
+    } else if(header.innerHTML == "Draymond Green") {
+        dotThree.classList.remove('greyout');
+        dotFour.classList.toggle('greyout');
     } else {
-
-    }
+        dotFour.classList.remove('greyout');
+        dotFive.classList.toggle('greyout');
     }
 }
 
-
-if (elemBottom < docViewBottom) {
-    $elem.addClass('active');
-  }
 
 // 1. Click button and greyout class appears on span
 //  - try for loops
