@@ -63,12 +63,22 @@ function dotsColor() {
     }
 }
 
+function fetchPlayerStats() {
+    // GET API
+    let request = new XMLHttpRequest();
+    request.open("GET", "https://www.balldontlie.io/api/v1/players");
+    request.send();
+    request.onload = () => {
+        console.log(request);
+        if(request.status === 200) {
+            console.log(JSON.parse(request.response));
+        } else {
+            console.log(`error ${request.status} ${request.statusText}`)
+        }
+    }
+}
 
-// 1. Click button and greyout class appears on span
-//  - try for loops
 
-
-// Make sure grey boxes correspond with change in image
 // button doesn't work on first click
 // Install API
 // Make colors and design nice
