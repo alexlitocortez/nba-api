@@ -26,6 +26,7 @@ var counter = 0;
 button.addEventListener('click', () => {
     addOne();
     dotsColor();
+    placeholderText();
 })
 
 // Function which triggers different images and text when button clicked
@@ -63,24 +64,21 @@ function dotsColor() {
     }
 }
 
-function fetchPlayerStats() {
-    // GET API
-    let request = new XMLHttpRequest();
-    request.open("GET", "https://www.balldontlie.io/api/v1/players");
-    request.send();
-    request.onload = () => {
-        console.log(request);
-        if(request.status === 200) {
-            console.log(JSON.parse(request.response));
-        } else {
-            console.log(`error ${request.status} ${request.statusText}`)
-        }
+function placeholderText() {
+    var ppg = document.getElementById('ppg');
+    var rpg = document.getElementById('rpg');
+    var apg = document.getElementById('apg');
+    var stats = [["25.00", "6.00", "5.00"], ["17.00", "6.00", "3.00"]
+["17.00", "5.00", "5.00"], ["10.00", "10.00", "10.00"], ["12.00", "7.00", "2.00"]];
+    for (var i = 0; i < stats.length; i++) {
     }
-}
 
 
+// Using for loop to display text
+
+
+// Create section for showing player stats
 // button doesn't work on first click
-// Install API
 // Make colors and design nice
 // Center everything
     //Make sure player name is centered
