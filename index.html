@@ -4,31 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>NBA API</title>
+    <title>Warrior Statistics</title>
 </head>
 <body>
     <!-- Image -->
     <img id="getImage" class="fade" src="curry.jpg" alt="Stephen Curry" width="600" height="400">
     <div class="stats">
-
+        <h1><span id="ppg"></span></h1>
+        <h1><span id="rpg"></span></h1>
+        <h1><span id="apg"></span></h1>
     </div>
     <!-- Slideshow container -->
     <div class="slideshow-container">
         <h1><span id="thisone">Stephen Curry</span></h1>
         <button type="button" id="button" class="button">CHANGE PLAYER</button>
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)"></a>
-        <a class="next" onclick="plusSlides(1)"></a>
     </div>
     <br>
-
     <!-- The dots/circles -->
     <div id="text-align" class="text-align">
-        <span id="dotOne" class="dot">Curry</span>
-        <span id="dotTwo" class="dot">Oubre</span>
-        <span id="dotThree" class="dot">Wiggins</span>
-        <span id="dotFour" class="dot">Green</span>
-        <span id="dotFive" class="dot">Wiseman</span>
+        <span id="dotOne" class="dot"></span>
+        <span id="dotTwo" class="dot"></span>
+        <span id="dotThree" class="dot"></span>
+        <span id="dotFour" class="dot"></span>
+        <span id="dotFive" class="dot"></span>
     </div>
 </body>
 <script src="api.js"></script>
