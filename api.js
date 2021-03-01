@@ -5,6 +5,8 @@ const button = document.getElementById('button');
 const textAlign = document.getElementById('text-align');
 const image = document.getElementById('getImage');
 const header = document.getElementById('thisone');
+const ppg = document.getElementById('ppg');
+
 
 // Array of NBA player images
 const images = ["/Users/l/Desktop/Frontendmentor.io/NBA API/curry.jpg", "/Users/l/Desktop/Frontendmentor.io/NBA API/oubre.jpg", 
@@ -26,7 +28,7 @@ var counter = 0;
 button.addEventListener('click', () => {
     addOne();
     dotsColor();
-    placeholderText();
+    pointStats();
 })
 
 // Function which triggers different images and text when button clicked
@@ -64,15 +66,16 @@ function dotsColor() {
     }
 }
 
-function placeholderText() {
-    var ppg = document.getElementById('ppg');
-    var rpg = document.getElementById('rpg');
-    var apg = document.getElementById('apg');
-    var stats = [["25.00", "6.00", "5.00"], ["17.00", "6.00", "3.00"]
-["17.00", "5.00", "5.00"], ["10.00", "10.00", "10.00"], ["12.00", "7.00", "2.00"]];
-    for (var i = 0; i < stats.length; i++) {
-        stats.innerHTML += stats[i];
+function pointStats() {
+    var stats = ["29.00", "17.00", "17.00", "10.00", "12.00"];
+    for (var i = 0; i < stats.length; i++)
+    if(header.innerHTML == "Stephen Curry") {
+        ppg.innerHTML == stats[i];
     }
+}
+
+
+
 
 
 
