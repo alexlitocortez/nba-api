@@ -71,7 +71,9 @@ function placeholderText() {
     var stats = [["25.00", "6.00", "5.00"], ["17.00", "6.00", "3.00"]
 ["17.00", "5.00", "5.00"], ["10.00", "10.00", "10.00"], ["12.00", "7.00", "2.00"]];
     for (var i = 0; i < stats.length; i++) {
+        stats.innerHTML += stats[i];
     }
+
 
 
 // Using for loop to display text
