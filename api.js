@@ -5,7 +5,6 @@ const button = document.getElementById('button');
 const textAlign = document.getElementById('text-align');
 const image = document.getElementById('getImage');
 const header = document.getElementById('thisone');
-const ppg = document.getElementById('ppg');
 
 
 // Array of NBA player images
@@ -70,11 +69,9 @@ function pointStats() {
     var stats = ["29.00", "17.00", "17.00", "10.00", "12.00"];
     for (var i = 0; i < stats.length; i++)
     if(header.innerHTML == "Stephen Curry") {
-        ppg.innerHTML == stats[i];
+        document.getElementById('ppg').innerHTML = stats[i];
     }
 }
-
-
 
 
 
