@@ -69,8 +69,27 @@ function pointStats() {
     var stats = ["29.00", "17.00", "17.00", "10.00", "12.00"];
     for (var i = 0; i < stats.length; i++)
     if(header.innerHTML == "Stephen Curry") {
-        document.getElementById('ppg').innerHTML = stats[i];
+        document.getElementById('ppg').innerHTML = stats[0];
     }
+    else if(header.innerHTML == "Kelly Oubre") {
+        document.getElementById('ppg').innerHTML = stats[1];
+    }
+    else if(header.innerHTML == "Andrew Wiggins") {
+        document.getElementById('ppg').innerHTML = stats[2];
+    }
+    else if(header.innerHTML == "Draymond Green") {
+        document.getElementById('ppg').innerHTML = stats[3];
+    } else {
+        document.getElementById('ppg').innerHTML = stats[4];
+    }
+}
+
+function reboundStats() {
+    var reboundStats = []
+}
+
+function assistStats() {
+
 }
 
 
@@ -79,7 +98,6 @@ function pointStats() {
 // Using for loop to display text
 
 
-// Create section for showing player stats
 // button doesn't work on first click
 // Make colors and design nice
 // Center everything
