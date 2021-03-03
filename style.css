@@ -134,3 +134,25 @@ html {
     from {opacity: .4}
     to {opacity: 1}
 }
+
+/* Media Queries */
+@media (min-width: ) and (max-width: ) {
+    
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    #getImage {
+        position: absolute;
+        left: 65%;
+        width: 400px;
+    }
+
+    .slideshow-container {
+        position: absolute;
+        left: 100%;
+    }
+}
+
+
+
+
