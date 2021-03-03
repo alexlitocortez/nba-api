@@ -28,6 +28,8 @@ button.addEventListener('click', () => {
     addOne();
     dotsColor();
     pointStats();
+    reboundStats();
+    assistStats();
 })
 
 // Function which triggers different images and text when button clicked
@@ -66,7 +68,7 @@ function dotsColor() {
 }
 
 function pointStats() {
-    var stats = ["29.00", "17.00", "17.00", "10.00", "12.00"];
+    var stats = ["29.5", "15.5", "17.1", "5.7", "12.0"];
     for (var i = 0; i < stats.length; i++)
     if(header.innerHTML == "Stephen Curry") {
         document.getElementById('ppg').innerHTML = stats[0];
@@ -85,17 +87,46 @@ function pointStats() {
 }
 
 function reboundStats() {
-    var reboundStats = []
+    var reboundStats = ["5.4", "5.9", "4.5", "6.0", "5.9"];
+    for (var i = 0; i < reboundStats.length; i++)
+    if(header.innerHTML == "Stephen Curry") {
+        document.getElementById('rpg').innerHTML = reboundStats[0];
+    }
+    else if(header.innerHTML == "Kelly Oubre") {
+        document.getElementById('rpg').innerHTML = reboundStats[1];
+    }
+    else if(header.innerHTML == "Andrew Wiggins") {
+        document.getElementById('rpg').innerHTML = reboundStats[2];
+    }
+    else if(header.innerHTML == "Draymond Green") {
+        document.getElementById('rpg').innerHTML = reboundStats[3];
+    } else {
+        document.getElementById('rpg').innerHTML = reboundStats[4];
+    }
 }
 
 function assistStats() {
-
+    var assistStats = ["6.4", "1.4", "2.1", "8.5", "0.6"];
+    for (var i = 0; i < assistStats.length; i++)
+    if(header.innerHTML == "Stephen Curry") {
+        document.getElementById('apg').innerHTML = assistStats[0];
+    }
+    else if(header.innerHTML == "Kelly Oubre") {
+        document.getElementById('apg').innerHTML = assistStats[1];
+    }
+    else if(header.innerHTML == "Andrew Wiggins") {
+        document.getElementById('apg').innerHTML = assistStats[2];
+    }
+    else if(header.innerHTML == "Draymond Green") {
+       document.getElementById('apg').innerHTML = assistStats[3]; 
+    } else {
+        document.getElementById('apg').innerHTML = assistStats[4];
+    }
 }
 
 
 
 
-// Using for loop to display text
 
 
 // button doesn't work on first click
