@@ -43,6 +43,7 @@ function addOne() {
     counter++;
 }
 
+// Gives backgroundcolor to each dot when button is clicked
 function dotsColor() {
     var dotOne = document.getElementById('dotOne');
     var dotTwo = document.getElementById('dotTwo');
@@ -67,6 +68,7 @@ function dotsColor() {
     }
 }
 
+// Changes points to match player's stats
 function pointStats() {
     var stats = ["29.5", "15.5", "17.1", "5.7", "12.0"];
     for (var i = 0; i < stats.length; i++)
@@ -86,6 +88,7 @@ function pointStats() {
     }
 }
 
+// Changes rebounds to match player's stats
 function reboundStats() {
     var reboundStats = ["5.4", "5.9", "4.5", "6.0", "5.9"];
     for (var i = 0; i < reboundStats.length; i++)
@@ -105,6 +108,7 @@ function reboundStats() {
     }
 }
 
+// Changes assists to match player's stats
 function assistStats() {
     var assistStats = ["6.4", "1.4", "2.1", "8.5", "0.6"];
     for (var i = 0; i < assistStats.length; i++)
@@ -128,12 +132,6 @@ function assistStats() {
 
 
 
-
-// button doesn't work on first click
-// Make colors and design nice
-// Center everything
-    //Make sure player name is centered
-// Make responsive
 
 
 
